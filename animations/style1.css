@@ -1,0 +1,179 @@
+html,
+body {
+    font-family: 'Press Start 2P', cursive;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.topline-mario {
+    position: absolute;
+}
+
+.topline-world {
+    position: absolute;
+    left: 55%;
+}
+
+.topline-time {
+    position: absolute;
+    left: 85%;
+}
+
+.bottomline-score {
+    position: absolute;
+    top: 90px;
+}
+
+.bottomline-coin {
+    position: absolute;
+    top: 80px;
+    left: 30%;
+}
+
+.bottomline-world {
+    position: absolute;
+    top: 90px;
+    left: 55.7%;
+}
+
+.bottomline-time {
+    position: absolute;
+    top: 90px;
+    left: 85.5%;
+}
+
+.sky,
+.ground {
+    position: relative;
+}
+
+.sky {
+    height: 90%;
+    background-color: #548CFF;
+}
+
+.ground {
+    height: 10%;
+    background-color: #C84C0C;
+    background-image: url('https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/groundblock.png');
+
+}
+
+.scorebar {
+    position: absolute;
+    height: 120px;
+    width: 100%;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 180%;
+    color: white;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 0.2;
+}
+
+.cloud {
+    position: absolute;
+    height: 100px;
+
+}
+.cloud1 {
+    top: 120px;
+    animation: wind 80s both infinite linear reverse;
+    animation: wind 80s both infinite linear reverse;
+}
+
+.cloud2 {
+    top: 280px;
+    animation: wind 50s both infinite linear reverse;
+    animation: wind 50s both infinite linear reverse;
+}
+
+.cloud3 {
+    top: 450px;
+    animation: wind 30s both infinite linear reverse;
+    animation: wind 30s both infinite linear reverse;
+} 
+
+
+.skyblocks {
+    position: absolute;
+    top: -250px;
+}
+
+.brick {
+    position: fixed;
+    margin: -2px;
+}
+
+.brick1 {
+    left: 600px;
+}
+
+.brick2 {
+    left: 670px;
+}
+
+.brick3 {
+    left: 740px;
+}
+
+.brick4 {
+    left: 810px;
+}
+
+
+
+
+.bush {
+    position: absolute;
+    top: -70px;
+}
+
+.bush1 {
+    left: 150px;
+}
+
+.bush2 {
+    left: 900px;
+    ;
+}
+
+.bush3 {
+    left: 1500px;
+    ;
+}
+
+.mario{
+    position: absolute;
+    width: 80px;
+    animation: run 5s both infinite linear reverse;
+    top: -150px;
+}
+
+
+
+
+@keyframes run {
+    from {
+        right: 0%;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes wind {
+    from {
+        left: -300px;
+    }
+
+    to {
+        left: 100%;
+    }
+}
